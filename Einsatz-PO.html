@@ -154,7 +154,7 @@
             document.dispatchEvent(svgLoadedEvent)
         })
 
-        // After SCG is loaded, add event-functions to qualifications
+        // After SvG is loaded, add event-functions to qualifications
         document.addEventListener('SVGLoaded', () => {
             Array.from(document.querySelectorAll('#Content>g')).forEach((element) => {
                 element.onmouseover = function(){hoverFunction(this)}
